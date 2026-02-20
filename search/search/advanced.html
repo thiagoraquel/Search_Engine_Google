@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="top-nav">
+        <a href="index.html">Pesquisa Google</a>
+        <a href="image.html">Busca de Imagens</a>
+    </header>
+
+    <main class="advanced-container">
+        <h2>Busca Avançada</h2>
+        <hr> <p class="adv-subtitle">Encontre páginas com... </p>
+
+        <form action="https://google.com/search">
+            <div class="form-row">
+                <label>todas estas palavras:</label>
+                <input type="text" name="as_q" class="adv-input" autofocus>
+            </div>
+
+            <div class="form-row">
+                <label>esta palavra ou frase exata:</label>
+                <input type="text" name="as_epq" class="adv-input" autofocus>
+            </div>
+
+            <div class="form-row">
+                <label>qualquer uma destas palavras:</label>
+                <input type="text" name="as_oq" class="adv-input" autofocus>
+            </div>
+
+            <div class="form-row">
+                <label>nenhuma destas palavras:</label>
+                <input type="text" name="as_eq" class="adv-input" autofocus>
+            </div>
+
+            <div class="adv-btn-container">
+                <input type="submit" value="Pesquisa Avançada" class="adv-btn">
+            </div>
+    </main>
 </body>
 </html>

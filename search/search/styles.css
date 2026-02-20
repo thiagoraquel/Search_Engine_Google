@@ -49,7 +49,7 @@ body {
     outline: none !important;
 }
 
-.button-container {
+.buttons-container {
     margin-top: 10px;
     display: flex;
     gap: 12px;
@@ -91,4 +91,95 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.top-nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.top-nav a {
+    color: #202124;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.advanced-container {
+    padding: 30px 40px;
+    max-width: 1000px;
+    margin-top: 60px;
+}
+
+.advanced-container h2 {
+    color: #d93025;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.adv-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;    
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    border-top: 1 px solid #ebebeb;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    width: 200px;
+    font-size: 13px;
+    color: #222;
+}
+
+.adv-input {
+    flex: 1;
+    max-width: 500px;
+    height: 25px;
+    padding: 3px 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 1px;
+    outline: none;
+}
+
+.adv-input:focus {
+    border: 1px solid #4d90fe; 
+}
+
+.adv-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 700px; 
+    margin-top: 25px;
+}
+
+.adv-btn {
+    background-color: #4d90fe;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #3079ed;
+    border-radius: 2px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.adv-btn:hover {
+    background-color: #357ae8;
 }
