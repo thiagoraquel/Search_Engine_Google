@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #dfe1e5;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    /* justify content */
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    width: 90%;
+    max-width: 580px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    
+    /* Forçamos a remoção do contorno padrão e deixamos a borda invisível */
+    outline: none !important; 
+    border: 1px solid transparent !important; 
+    border-radius: 24px;
+    transition: border-color 0.4s ease; 
+}
+
+/* O estilo quando interage */
+.search-bar:hover, .search-bar:focus {
+    border: 1px solid #000000 !important; 
+    outline: none !important;
+}
+
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+}
+
+.search-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 10px 26px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+footer {
+    background-color: #f2f2f2; /* Cinza clássico do rodapé do Google */
+    width: 100%;
+    position: absolute;
+    bottom : 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #70757a;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
